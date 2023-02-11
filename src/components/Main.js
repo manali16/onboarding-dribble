@@ -81,17 +81,18 @@ export default function HorizontalStepper() {
 // Stepper handler 
   const handleNext = (event) => {
     event.preventDefault();
+
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 
-  return (
+  return ( 
     <>
       <div className="container">
         <div className="content-box">
           <Stepper activeStep={activeStep}>
-            {steps.map((label) => (
-              <Step key={label}>
-                <StepLabel></StepLabel>
+            {steps.map((label,index) => (
+              <Step key={label} completed={index===3?index < activeStep+1:index < activeStep}>
+                <StepLabel ></StepLabel>
               </Step>
             ))}
           </Stepper>
