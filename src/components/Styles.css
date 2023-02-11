@@ -1,0 +1,36 @@
+.container {
+  text-align: center;
+}
+.content-box {
+  display: inline-block;
+}
+table, th, td {
+  border: 1px solid #4730a9;
+  border-collapse: collapse;
+  width: -webkit-fill-available;
+  padding: 5px;
+
+}
+
+h1{
+  font-family: system-ui;
+  font-size: 2.5rem;
+}
+
+p{
+  font-size: large;
+  font-weight: 600;
+  color: #a08d8d;
+  letter-spacing: 0.5px;
+  font-family: system-ui;
+}
+
+.selectTab-div{
+  display: table-cell;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.selectTab-div p{
+  font-size: 14px;
+}
