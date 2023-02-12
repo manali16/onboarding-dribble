@@ -78,10 +78,8 @@ export default function HorizontalStepper() {
     }
   }  
 
-// Stepper handler 
   const handleNext = (event) => {
     event.preventDefault();
-
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 

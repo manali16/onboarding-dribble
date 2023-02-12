@@ -1,9 +1,18 @@
 import Button from "@material-ui/core/Button";
 import "./Styles.css"
 export default function SelectTab({handleNext,selectedTab,dispatch}){
+function handleData(e){
+  e.preventDefault()
+  if(selectedTab){
+    handleNext()
+  }
+  else{
+    alert("Please select one option!")
+  }
+}
 return(
  <>
- <form onSubmit={handleNext}>
+ <form onSubmit={handleData}>
  <h1>How are you planning to use Eden? !</h1>
  <p>You can always create new one later.</p>
  <div style={{marginBottom:"3vh"}}>
